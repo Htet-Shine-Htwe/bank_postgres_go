@@ -8,4 +8,5 @@ import (
 
 func RegisterRoutes(r *mux.Router) {
 	r.HandleFunc("/account", util.MakeHTTPHandleFunc(acc_handler.HandleAccount))
+	r.HandleFunc("/get-account", util.MakeHTTPHandleFunc(acc_handler.HandleGetAccount))
 }
